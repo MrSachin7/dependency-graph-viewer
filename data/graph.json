@@ -1,0 +1,299 @@
+{
+  "nodes": [
+    {
+      "id": "act-1",
+      "type": "activity",
+      "name": "Payment Processing",
+      "rto_hours": 1,
+      "priority": "critical",
+      "owner": "Finance Operations Team"
+    },
+    {
+      "id": "act-2",
+      "type": "activity",
+      "name": "Customer Onboarding",
+      "rto_hours": 8,
+      "priority": "high",
+      "owner": "Sales Operations Team"
+    },
+    {
+      "id": "act-3",
+      "type": "activity",
+      "name": "Fraud Detection",
+      "rto_hours": 2,
+      "priority": "critical",
+      "owner": "Risk & Compliance Team"
+    },
+    {
+      "id": "act-4",
+      "type": "activity",
+      "name": "Customer Support",
+      "rto_hours": 4,
+      "priority": "high",
+      "owner": "Customer Experience Team"
+    },
+    {
+      "id": "act-5",
+      "type": "activity",
+      "name": "Regulatory Reporting",
+      "rto_hours": 24,
+      "priority": "critical",
+      "owner": "Risk & Compliance Team"
+    },
+    {
+      "id": "act-6",
+      "type": "activity",
+      "name": "Employee Payroll",
+      "rto_hours": 48,
+      "priority": "medium",
+      "owner": "HR Operations Team"
+    },
+    {
+      "id": "act-7",
+      "type": "activity",
+      "name": "Data Backup & Recovery",
+      "rto_hours": 4,
+      "priority": "high",
+      "owner": "IT Infrastructure Team"
+    },
+    {
+      "id": "act-8",
+      "type": "activity",
+      "name": "IT Service Desk",
+      "rto_hours": 8,
+      "priority": "medium",
+      "owner": "IT Infrastructure Team"
+    },
+    {
+      "id": "res-1",
+      "type": "resource",
+      "resource_type": "technology",
+      "name": "Core Banking System",
+      "contact": "IT Infrastructure Team"
+    },
+    {
+      "id": "res-2",
+      "type": "resource",
+      "resource_type": "third_party",
+      "name": "SWIFT Network",
+      "vendor": "SWIFT SCRL",
+      "contact": "Finance Operations Team"
+    },
+    {
+      "id": "res-3",
+      "type": "resource",
+      "resource_type": "technology",
+      "name": "Data Warehouse",
+      "contact": "IT Infrastructure Team"
+    },
+    {
+      "id": "res-4",
+      "type": "resource",
+      "resource_type": "third_party",
+      "name": "Salesforce CRM",
+      "vendor": "Salesforce Inc.",
+      "contact": "Sales Operations Team"
+    },
+    {
+      "id": "res-5",
+      "type": "resource",
+      "resource_type": "technology",
+      "name": "VPN & Network Access",
+      "contact": "IT Infrastructure Team"
+    },
+    {
+      "id": "res-6",
+      "type": "resource",
+      "resource_type": "people",
+      "name": "Finance Team",
+      "contact": "CFO"
+    },
+    {
+      "id": "res-7",
+      "type": "resource",
+      "resource_type": "people",
+      "name": "IT Infrastructure Team",
+      "contact": "Head of IT"
+    },
+    {
+      "id": "res-8",
+      "type": "resource",
+      "resource_type": "people",
+      "name": "Compliance Team",
+      "contact": "Chief Compliance Officer"
+    },
+    {
+      "id": "res-9",
+      "type": "resource",
+      "resource_type": "building",
+      "name": "HQ Office",
+      "contact": "Facilities Manager"
+    },
+    {
+      "id": "res-10",
+      "type": "resource",
+      "resource_type": "building",
+      "name": "Primary Data Centre",
+      "contact": "IT Infrastructure Team"
+    },
+    {
+      "id": "res-11",
+      "type": "resource",
+      "resource_type": "third_party",
+      "name": "AWS Cloud Infrastructure",
+      "vendor": "Amazon Web Services",
+      "contact": "IT Infrastructure Team"
+    },
+    {
+      "id": "res-12",
+      "type": "resource",
+      "resource_type": "third_party",
+      "name": "Microsoft 365",
+      "vendor": "Microsoft Corporation",
+      "contact": "IT Infrastructure Team"
+    },
+    {
+      "id": "res-13",
+      "type": "resource",
+      "resource_type": "technology",
+      "name": "Fraud Detection Engine",
+      "contact": "Risk & Compliance Team"
+    },
+    {
+      "id": "res-14",
+      "type": "resource",
+      "resource_type": "people",
+      "name": "Risk Analyst",
+      "contact": "Chief Risk Officer"
+    },
+    {
+      "id": "res-15",
+      "type": "resource",
+      "resource_type": "equipment",
+      "name": "On-Premise Server Hardware",
+      "contact": "IT Infrastructure Team"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "act-1",
+      "to": "res-1"
+    },
+    {
+      "from": "act-1",
+      "to": "res-2"
+    },
+    {
+      "from": "act-1",
+      "to": "res-6"
+    },
+    {
+      "from": "act-1",
+      "to": "res-10"
+    },
+    {
+      "from": "act-2",
+      "to": "res-4"
+    },
+    {
+      "from": "act-2",
+      "to": "res-1"
+    },
+    {
+      "from": "act-2",
+      "to": "res-12"
+    },
+    {
+      "from": "act-3",
+      "to": "res-13"
+    },
+    {
+      "from": "act-3",
+      "to": "res-3"
+    },
+    {
+      "from": "act-3",
+      "to": "res-14"
+    },
+    {
+      "from": "act-3",
+      "to": "res-10"
+    },
+    {
+      "from": "act-4",
+      "to": "res-4"
+    },
+    {
+      "from": "act-4",
+      "to": "res-12"
+    },
+    {
+      "from": "act-4",
+      "to": "res-5"
+    },
+    {
+      "from": "act-5",
+      "to": "res-3"
+    },
+    {
+      "from": "act-6",
+      "to": "res-8"
+    },
+    {
+      "from": "act-5",
+      "to": "res-1"
+    },
+    {
+      "from": "act-5",
+      "to": "res-12"
+    },
+    {
+      "from": "act-6",
+      "to": "res-6"
+    },
+    {
+      "from": "act-6",
+      "to": "res-11"
+    },
+    {
+      "from": "act-6",
+      "to": "res-9"
+    },
+    {
+      "from": "act-7",
+      "to": "res-11"
+    },
+    {
+      "from": "act-7",
+      "to": "res-7"
+    },
+    {
+      "from": "act-7",
+      "to": "res-15"
+    },
+    {
+      "from": "act-7",
+      "to": "res-10"
+    },
+    {
+      "from": "act-8",
+      "to": "act-6"
+    },
+    {
+      "from": "act-8",
+      "to": "res-7"
+    },
+    {
+      "from": "act-8",
+      "to": "res-5"
+    },
+    {
+      "from": "act-8",
+      "to": "res-12"
+    },
+    {
+      "from": "act-8",
+      "to": "res-9"
+    }
+  ]
+}
